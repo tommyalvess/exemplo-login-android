@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".CadastrarActivity" android:label="@string/cadastrar"></activity>
+        <activity android:name=".CadastrarActivity" android:label="Cadastrar"></activity>
     </application>
 
 </manifest>
