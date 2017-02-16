@@ -11,6 +11,15 @@
     android:orientation="vertical"
     tools:context="segundotina.fiap.com.br.exemplodelogin.LoginActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="35dp"
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,6 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editUsuario"
+        android:singleLine="true"
         />
 
     <TextView
@@ -33,14 +43,32 @@
         android:id="@+id/editSenha"
         android:inputType="textPassword"
         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCadastrar"
+            android:layout_weight="1"
+            android:text="cadastrar"
+            android:onClick="cadastrar"
+            android:drawableLeft="@drawable/cadastro"
+        />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnLogin"
+        android:layout_weight="1"
         android:text="Login"
         android:onClick="logar"
+        android:drawableLeft="@drawable/lock"
         />
 
-
+    </LinearLayout>
 
 </LinearLayout>
